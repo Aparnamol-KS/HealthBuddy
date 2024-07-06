@@ -1,0 +1,13 @@
+body {
+  background-color: black;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 0;
+}

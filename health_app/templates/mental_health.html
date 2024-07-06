@@ -1,0 +1,407 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mental health</title>
+    <link rel="stylesheet" href="{% static 'yoga.css' %}">
+    <link rel="icon" type="image/x-icon" href=" {% static "images/favicon.png" %} ">
+    <script src="https://kit.fontawesome.com/016c7637cc.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body style=" font-family:poppins;">
+    
+    <style>
+        .nav-item{
+            padding-top:20px;
+            font-size:20px;
+        }
+    </style>
+    <header style="z-index:1;">
+        <div class="row ">
+            <nav class="navbar fixed-top" style="background-color:#bfb7e7;">
+                <div class="container-fluid my-auto">
+
+                    <h1 style="font-size:35px; " class="navbar-brand text-white my-auto"><b><a
+                                style="text-decoration:none; color:white;" href="{% url 'get_home_page' %}"><i
+                                    class="p-1 fa-solid fa-circle-arrow-left"></i></a> HealthBuddy</b></h1>
+                    <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div style="background-color:#bfb7e7;" class="offcanvas-header">
+                            <h3 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Mental Health and Well-being</h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body p-4">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#what_is_mental_health">What is Mental Health ?</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#Techniques_for_Meditation_and_Mindfulness">Techniques for Meditation and Mindfulness</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#stress_management">Stress Management</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#Mental_Health_Resources">Mental Health Resources</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Self-Care Tips</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Breathing Exercises</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="what_is_mental_health" style="padding:100px;">
+        <div class="container">
+            <div class="row p-3 align-items-center">
+                <div class="col-md-7 p-3 my-auto">
+                    <h1 style="font-size:65px;" class="col-12 text-center p-3"><b>What is Mental Health <span
+                                style="font-size:90px; color:#bfb7e7;">?</span></b></h1>
+                    <p class="col-12 p-3">Mental health is a state of mental well-being that enables people to cope with the stresses of life, realize their abilities, learn well and work well, and contribute to their community. It is an integral component of health and well-being that underpins our individual and collective abilities to make decisions, build relationships and shape the world we live in. Mental health is a basic human right. And it is crucial to personal, community and socio-economic development.</p>
+                </div>
+                <div class="col-md-5 col-12 my-auto">
+                    <img style="height:100% ; width:100%;" src="{% static "images/mental_health.avif" %}">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="Techniques_for_Meditation_and_Mindfulness">
+        <div class="container">
+            <h1 style="font-size:65px;" class="text-center p-4"><b>Techniques for Meditation and Mindfulness</b></h1>
+            <div class="row align-items-center">
+
+                
+                <div class="col-md-7 col-12 my-auto">
+                    <h1 class="text-center p-4"><b>1. Mindful Breathing</b></h1>
+                    <p class="pt-3">Focus your attention on your breath. Breathe deeply and slowly,
+                         noticing the sensations of the air moving in and out of your body. 
+                        This can help anchor you in the present moment.</p>
+                </div>
+                <div class="col-md-4 col-12 my-auto">
+                      <img  style="scale:1.1;"
+                      src=" {% static "images/mindful breathing.jpg" %} ">
+                </div>
+
+
+            
+                <div class="col-md-6 col-12 align-items-center my-auto mt-5 pt-5 " >
+                      <img  style="width:80%; height:80%"
+                      src=" {% static "images/body scan.png" %} ">
+                </div>
+                <div class="col-md-6 col-12 align-items-center my-auto mt-5 pt-5">
+                    <h1 class="text-center"><b>2. Body Scan Meditation</b></h1>
+                    <p class="pt-3">Lie down or sit comfortably and bring your attention to
+                         different parts of your body, starting from your toes and moving up to your head.
+                          Notice any tension or sensations in each area and try to release any tension.</p>
+                </div>
+
+
+                <div class="col-md-7 col-12 align-items-center my-auto pt-5 ">
+                    <h1 class="text-center p-4"><b>3. Guided Imagery</b></h1>
+                    <p class="pt-3">Use your imagination to create a relaxing scene or 
+                        environment in your mind. This could be a beach, a forest, or any 
+                        place where you feel calm and peaceful. Visualize yourself in this place,
+                         engaging all your senses.</p>
+                </div>
+                <div class="col-md-4 col-12 align-items-center my-auto pt-5 ">
+                      <img  style="height:150% ; width:150%;"
+                      src=" {% static "images/guided imaginery.jpg" %} ">
+                </div>
+
+                
+                <div class="col-md-6 col-12 align-items-center my-auto pt-5" >
+                    <img  style="height:80% ; width:80%;"
+                    src=" {% static "images/love-kindness.webp" %} ">
+              </div>
+              <div class="col-md-6 col-12 align-items-center my-auto pt-5">
+                  <h1 class="text-center"><b>4. Loving-Kindness Meditation</b></h1>
+                  <p class="pt-3">Sit comfortably and focus on generating feelings of 
+                    compassion and love towards yourself and others. Start with yourself,
+                     then extend these feelings to loved ones, acquaintances, and even people you have
+                      conflicts with.</p>
+              </div>
+                
+
+              <div class="col-md-6 col-12 align-items-center my-auto pt-5">
+                <h1 class="text-center "><b>5. Walking Meditation</b></h1>
+                <p class="pt-3">Find a quiet place where you can walk slowly and mindfully.
+                     Pay attention to the sensations of your feet touching the ground,
+                      the movement of your legs, and the rhythm of your breath.</p>
+            </div>
+            <div class="col-md-6 col-12  align-items-center my-auto pt-5">
+                  <img  style="height:70% ; width:70%;"
+                  src=" {% static "images/mindful-walking-meditation-vector.jpg" %} ">
+            </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="stress_management">
+        <div class="container">
+            <h1 style="font-size:65px;" class="text-center p-4"><b>Stress Management</b></h1>
+            <div class="row p-3 align-items-center">
+                <div class="col-md-7 p-3 my-auto">
+                    <h1><b>What is Stress ?</b></h1>
+                    <p class="pt-5">Stress can be defined as a state of worry or mental tension caused by a 
+                        difficult situation. Stress is a natural human response that prompts us to address 
+                        challenges and threats in our lives. Everyone experiences stress to some degree</p>
+                </div>
+                <div class="col-md-5 my-auto">
+                    <img style="height:100% ; width:100%;" src="{% static "images/stress.webp" %}">
+                </div>
+
+                <h1 class="text-center" style="padding-top:100px; padding-bottom:50px;"><b>Tips for Effectively Managing Stress</b></h1>
+                
+                <div class="col-md-12 xyz" style="padding:40px; box-shadow: 10px 10px black;">
+                    <div class="card mb-6">
+                        <div class="row no-gutters">
+                            <div class="col-md-5 p-3 my-auto">
+                                <img src=" {% static "images/identify_stress.jpg" %} " class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-7 my-auto">
+                                <div class="card-body pt-4">
+                                    <h5 style="font-size:30px;" class="card-title"><b>Identify Stress Triggers</b></h5>
+                                    <p>Recognizing the sources of your stress is the first step in managing it. Keeping a stress journal can help identify patterns and specific triggers. Note down:
+                                        <ul style="padding:10px;" class="m-2">
+                                            <li>Situations that cause stress</li>
+                                            <li>Your physical and emotional response</li>
+                                            <li>How you dealt with the stress</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-12 xyz" style="padding:40px; box-shadow: 10px 10px black;">
+                    <div class="card mb-6">
+                        <div class="row no-gutters">
+                            <div class="col-md-5 p-3 my-auto">
+                                <img src=" {% static "images/deep_breath.jpg" %} " class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-7 my-auto">
+                                <div class="card-body pt-4">
+                                    <h5 style="font-size:30px;" class="card-title"><b>Practice Relaxation Techniques</b></h5>
+                                    <p>Incorporate relaxation techniques into your daily routine to reduce stress levels. Here are a few methods to try
+                                        <ul style="padding:10px;" class="m-2">
+                                            <li>Deep Breathing</li>
+                                            <li>Progressive Muscle Relaxation</li>
+                                            <li>Guided Imagery</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-12 xyz" style="padding:40px; box-shadow: 10px 10px black;">
+                    <div class="card mb-6">
+                        <div class="row no-gutters">
+                            <div class="col-md-5 p-3 my-auto">
+                                <img src=" {% static "images/exercise.jpg" %} " class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-7 my-auto">
+                                <div class="card-body pt-4">
+                                    <h5 style="font-size:30px;" class="card-title"><b>Exercise Regularly</b></h5>
+                                    <p>Regular physical activity helps reduce stress by releasing endorphins, which are natural stress relievers. Aim for at least 30 minutes of moderate exercise most days of the week. Examples include:
+                                        <ul style="padding:10px;" class="m-2">
+                                            <li>Walking or jogging</li>
+                                            <li>Yoga or Pilates</li>
+                                            <li>Dancing or swimming</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="col-md-12 xyz" style="padding:40px; box-shadow: 10px 10px black;">
+                    <div class="card mb-6">
+                        <div class="row no-gutters">
+                            <div class="col-md-5 p-3 my-auto">
+                                <img src=" {% static "images/healthy-life.jpg" %} " class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-7 my-auto">
+                                <div class="card-body pt-4">
+                                    <h5 style="font-size:30px;" class="card-title"><b>Maintain a Healthy Lifestyle</b></h5>
+                                    <p>A healthy lifestyle can make you more resilient to stress. Focus on these areas:
+
+                                       
+                                        .
+                                        <ul style="padding:10px;" class="m-2">
+                                            <li><b>Healthy Eating</b>
+                                                <ul >
+                                                    <li>Eat a balanced diet with plenty of fruits, vegetables, lean proteins, and whole grains.</li>
+                                                    <li>Avoid excessive caffeine and sugar.</li>
+                                                </ul>
+                                            </li>
+                                            <li><b>Quality Sleep</b>
+                                                <ul >
+                                                    <li>Aim for 7-9 hours of sleep per night.</li>
+                                                    <li>Maintain a regular sleep schedule and create a relaxing bedtime routine</li>
+                                                </ul>
+                                            </li>
+                                            
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 xyz" style="padding:40px; box-shadow: 10px 10px black;">
+                    <div class="card mb-6">
+                        <div class="row no-gutters">
+                            <div class="col-md-5 p-3 my-auto mx-auto">
+                                <img src=" {% static "images/time-manage.avif" %} " class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-7 my-auto">
+                                <div class="card-body pt-4">
+                                    <h5 style="font-size:30px;" class="card-title"><b>Time Management</b></h5>
+                                    <p>Effective time management can help you feel more in control and reduce stress. Try these tips:
+                                        <ul style="padding:10px;" class="m-2">
+                                            <li>Organize tasks and prioritize them.</li>
+                                            <li>Break larger tasks into smaller, manageable steps.</li>
+                                            <li>Set realistic deadlines and avoid overcommitting.</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-12 xyz" style="padding:40px; box-shadow: 10px 10px black;">
+                    <div class="card mb-6">
+                        <div class="row no-gutters">
+                            <div class="col-md-5 p-3 my-auto ">
+                                <img src=" {% static "images/social-support.png" %} " class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-7 my-auto">
+                                <div class="card-body pt-4">
+                                    <h5 style="font-size:30px;" class="card-title"><b>Seek Social Support</b></h5>
+                                    <p>Connecting with others can provide relief and support. Don't hesitate to reach out to friends, family, or 
+                                        support groups. Sharing your feelings and experiences can be very therapeutic.</p>
+                                    <p>Community Forum: [<a style="text-decoration:underline; color:black" href=" {% url "blog_display" %} ">Join Our Community Forum</a>: Share Your Experience]</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="Mental_Health_Resources" style="padding:100px;">
+        <div class="container">
+            <div class="row">
+            <h1 style="font-size:65px;" class="text-center p-4"><b>Mental Health Resources</b></h1>
+            <div class="row p-3 align-items-center">
+                <div class="col-md-12 p-3">
+                    <h2 class="pt-3 pb-4">TEDx Talk: "The power of vulnerability" by Brené Brown</h2>
+                    <div class="pt-2 embed-responsive embed-responsive-16by9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/iCvmsMzlF7o?si=-bzvdY7oQlJxj_gb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div> 
+
+                <div class="col-md-12 p-3">
+                    <h2 ><b>Websites</b></h2>
+
+                    <div>
+                        <h5 class="pt-2">1. National Alliance on Mental Illness (<a style=" text-decoration:underline; color:black; " href="https://www.nami.org/">NAMI</a>)</h5>
+                        <p class="p-2">NAMI provides advocacy, education, support, and public awareness so that all individuals
+                             and families affected by mental illness can build better lives.</p>
+                    </div>
+
+                    <div>
+                        <h5 class="pt-2">2. Mental Health America (<a style=" text-decoration:underline; color:black; " href="https://www.mhanational.org/">MHA</a>)</h5>
+                        <p class="p-2">MHA is dedicated to addressing the needs of those living with mental illness 
+                            and promoting the overall mental health of all Americans.</p>
+                    </div>
+
+                    <div>
+                        <h5 class="pt-2">3. <a style=" text-decoration:underline; color:black; " href="https://www.mind.org.uk/">Mind</a></h5>
+                        <p class="p-2">Mind provides advice and support to empower anyone experiencing a mental health problem. They campaign to 
+                            improve services, raise awareness, and promote understanding.</p>
+                    </div>
+                   
+                </div>
+
+                <div class="col-md-12 p-3">
+                    <h2 >Books and Guides</h2>
+                    
+                    <p class="pt-3">"<a style=" text-decoration:underline; color:black; " href="https://www.amazon.in/Happiness-Trap-Struggling-Start-Living/dp/1590305841">The Happiness Trap</a>" by Russ Harris: Guide to mindfulness and acceptance. </p>
+                    <p class="pt-3">"<a style=" text-decoration:underline; color:black; " href="https://www.amazon.com/Feeling-Good-New-Mood-Therapy/dp/0380810336">Feeling Good</a>" by David D. Burns: Cognitive-behavioral techniques for depression.</p>
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer style="background-color:#bfb7e7;" class="py-3 my-10 ">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link px-2 text-muted">About Us</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link px-2 text-muted">Contact Us</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+          <li class="nav-item"><a href=" {% url "blog_display" %} " class="nav-link px-2 text-muted">Blogs</a></li>
+        </ul>
+        <p class="text-center text-muted">&copy; 2022 Company, Inc</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

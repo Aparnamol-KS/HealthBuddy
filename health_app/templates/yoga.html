@@ -1,0 +1,497 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Yoga</title>
+    <link rel="stylesheet" href="{% static 'yoga.css' %}">
+    <link rel="icon" type="image/x-icon" href=" {% static "images/favicon.png" %} ">
+    <script src="https://kit.fontawesome.com/016c7637cc.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body style=" font-family:poppins;">
+    
+    <style>
+        .nav-item{
+            padding-top:20px;
+            font-size:20px;
+        }
+    </style>
+    <header style="z-index:1;">
+        <div class="row ">
+            <nav class="navbar fixed-top" style="background-color:#bfb7e7;">
+                <div class="container-fluid my-auto">
+
+                    <h1 style="font-size:35px; " class="navbar-brand text-white my-auto"><b><a
+                                style="text-decoration:none; color:white;" href="{% url 'get_home_page' %}"><i
+                                    class="p-1 fa-solid fa-circle-arrow-left"></i></a> HealthBuddy</b></h1>
+                    <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div  class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div style="background-color:#bfb7e7;" class="offcanvas-header">
+                            <h3 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Yoga and Alternative
+                                Therapies</h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body p-4">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#what_is_yoga">What is Yoga ?</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#yoga_benefits">Yoga Benefits</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#yogaposes">Yoga Poses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#yogaresources">Yoga Resources</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Alternative Therapies</a>
+                                    <ul style="list-style:none;">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">Acupuncture</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">Aromatherapy</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">Other Therapies</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <section id="what_is_yoga" style="padding-top: 10em; padding-bottom: 2.5em;">
+        <div class="container">
+            <div class="row p-3">
+                <div class="col-md-7 p-3 my-auto">
+                    <h1 style="font-size:65px;" class="text-center p-4"><b>What is Yoga <span
+                                style="font-size:90px; color:#bfb7e7;">?</span></b></h1>
+                    <p class="p-5 m-2">Yoga is an ancient practice that involves physical poses, concentration, and deep
+                        breathing.
+                        A regular yoga practice can promoteTrusted Source endurance, strength, calmness,
+                        flexibility, and well-being.</p>
+                </div>
+                <div class="col-md-5 my-auto">
+                    <img style="height:80% ; width:80%;" src="{% static "images/yogatitle.jpg" %}">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="yoga_benefits">
+        <div class="container">
+
+            <div class="row p-2">
+                <h1 style="font-size:65px;" class="text-center pb-2 pt-5"><b>Benefits of Yoga</b></h1>
+                <div class="col-md-6 p-3 my-auto">
+                    <img style="scale:1.1;" src=" {% static "images/yogabenefit.avif" %} ">
+            </div>
+            <div  style=" font-size:20px;" class="col-md-6 p-3 my-auto">
+                    <p class="p-5">Yoga offers a wide range of benefits for both physical and mental health. Some of the
+                        key benefits are </p>
+                    <ul style="list-style-type:square; " class="p-5 m-3">
+                        <li><a style=" text-decoration:none; color:#204a6e;" href="#physical_benefits">Physical
+                                Benefits</a></li>
+                        <li><a style="text-decoration:none; color:#204a6e;" href="#Mental-and-Emotional-Benefits">Mental
+                                and Emotional Benefits</a>
+                        </li>
+                        <li><a style=" text-decoration:none; color:#204a6e;" href="#Social-Benefits">Social Benefits</a>
+                        </li>
+                        <li><a style=" text-decoration:none; color:#204a6e;" href="#Other-Benefits">Other Benefits</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="physical_benefits" class="col-md-12">
+                    <h1 style="font-size:45px;" class="p-4"><b>Physical Benefits</b></h1>
+                    <div class="p-4">
+                        <h3>1. Improves Flexibility</h3>
+                        <p class="pt-3">Regular yoga practice is highly effective in stretching and toning the
+                            muscles of the body, which in turn enhances overall strength and endurance.
+                            This practice involves a series of poses and movements that gradually extend the range
+                            of motion of your muscles and joints, leading to improved flexibility and mobility.
+                            Over time, yoga can help lengthen and loosen the muscles, reducing the risk of injury and
+                            alleviating muscle stiffness and joint pain. Enhanced flexibility can also lead to better
+                            posture and balance, as well as more fluid and graceful movements in everyday activities.
+                            Moreover, the focus on mindful breathing and movement in yoga promotes a deeper connection
+                            with your body, encouraging awareness and appreciation of your physical capabilities and
+                            limitations.</p>
+                    </div>
+
+                    <div class="p-4">
+                        <h3>2. Increases Strength</h3>
+                        <p class="pt-3">Many yoga poses are designed to build muscle strength by requiring you to
+                            support your own body weight in various positions. Poses like Plank, Downward-Facing Dog,
+                            and Warrior sequences engage multiple muscle groups simultaneously, promoting balanced
+                            muscle development. This functional strength improves not only your yoga practice but also
+                            your ability to perform daily activities with ease. Increased muscle strength also helps in
+                            protecting joints and reducing the risk of injury, making yoga a comprehensive workout for
+                            both body and mind.</p>
+                    </div>
+
+                    <div class="p-4">
+                        <h3>3. Enhances Balance</h3>
+                        <p class="pt-3">Yoga significantly improves balance and stability through poses that require you
+                            to maintain your center of gravity in challenging positions. Standing poses like Tree Pose
+                            and Warrior III enhance proprioception, which is your body's ability to sense its position
+                            in space. Improved balance reduces the risk of falls and injuries, particularly as you age,
+                            and contributes to better coordination and overall body awareness</p>
+                    </div>
+
+                    <div class="p-4">
+                        <h3>4. Boosts Cardiovascular Health</h3>
+                        <p class="pt-3">Certain forms of yoga, such as Vinyasa or Power Yoga, are designed to be more
+                            vigorous and can provide an excellent cardiovascular workout. These dynamic styles increase
+                            heart rate, improve blood circulation, and enhance overall cardiovascular fitness. Regular
+                            practice can lead to improved heart health, lower blood pressure, and a reduced risk of
+                            cardiovascular diseases.</p>
+                    </div>
+
+                    <div class="p-4">
+                        <h3>5. Improves Respiration</h3>
+                        <p class="pt-3">Breathing exercises, or pranayama, are a fundamental part of yoga that enhance
+                            lung function and respiratory efficiency. Techniques such as deep diaphragmatic breathing,
+                            alternate nostril breathing, and breath retention increase lung capacity, improve
+                            oxygenation of the blood, and promote relaxation. Better respiratory function supports
+                            overall physical health and endurance.</p>
+                    </div>
+
+                    <div class="p-4">
+                        <h3>6. Reduces Chronic Pain</h3>
+                        <p class="pt-3">Yoga has been shown to be effective in managing chronic pain conditions such as
+                            arthritis, lower back pain, and fibromyalgia. The gentle stretching and strengthening of
+                            muscles, along with the relaxation techniques in yoga, can help reduce pain and improve
+                            function. Regular practice can lead to a significant reduction in pain intensity and an
+                            increase in physical and emotional well-being.</p>
+                    </div>
+
+                    <div class="p-4">
+                        <h3>7. Promotes Better Posture</h3>
+                        <p class="pt-3">Regular yoga practice strengthens the core muscles that support the spine,
+                            promoting better posture. Poses that focus on alignment and balance, such as Mountain Pose
+                            and Cobra Pose, help to correct postural imbalances and prevent the development of chronic
+                            conditions related to poor posture, such as back and neck pain.</p>
+                    </div>
+
+                    <div class="p-4">
+                        <h3>8. Boosts Immunity</h3>
+                        <p class="pt-3">Some studies suggest that yoga can enhance immune function by reducing stress
+                            hormones, improving circulation, and promoting the movement of lymphatic fluid, which helps
+                            in removing toxins from the body. Regular yoga practice supports the immune system's ability
+                            to fight off illness and maintain overall health.</p>
+                    </div>
+                </div>
+
+                <div id="Mental-and-Emotional-Benefits" class="col-md-12">
+                    <h1 style="font-size:45px;" class="p-4"><b>Mental and Emotional Benefits</b></h1>
+                    <div class="p-4">
+                        <h3>1. Reduces Stress</h3>
+                        <p class="pt-3">Yoga is highly effective in reducing stress by lowering cortisol levels, the
+                            body's primary stress hormone. Through a combination of physical postures, breath control,
+                            and meditation, yoga provides a comprehensive approach to stress management. The mindful
+                            movements and deep breathing techniques activate the parasympathetic nervous system,
+                            promoting relaxation and reducing the physical effects of stress. Regular yoga practice
+                            helps cultivate a sense of inner calm and resilience, making it easier to cope with daily
+                            stressors.</p>
+                    </div>
+                    <div class="p-4">
+                        <h3>2. Improves Mental Clarity</h3>
+                        <p class="pt-3">The practice of meditation and focused breathing in yoga significantly enhances
+                            mental clarity and concentration. By quieting the mind and bringing attention to the present
+                            moment, yoga helps reduce mental clutter and improve cognitive function. Techniques such as
+                            mindfulness meditation and pranayama (breath control) sharpen focus, enhance memory, and
+                            promote a more disciplined and clear-thinking mind. This mental clarity can translate to
+                            better decision-making and problem-solving abilities in everyday life.</p>
+                    </div>
+                    <div class="p-4">
+                        <h3>3. Enhances Mood</h3>
+                        <p class="pt-3">Yoga can lead to a notable improvement in mood by increasing serotonin levels
+                            and decreasing levels of monoamine oxidase, an enzyme that breaks down neurotransmitters.
+                            The physical activity in yoga releases endorphins, the body's natural feel-good chemicals,
+                            while the meditative aspects help balance emotional states. This combination of physical and
+                            mental benefits creates a powerful effect on overall mood, helping to alleviate feelings of
+                            sadness, anxiety, and depression.</p>
+                    </div>
+                    <div class="p-4">
+                        <h3>4. Promotes Relaxation</h3>
+                        <p class="pt-3">Yoga promotes deep relaxation through the synergistic effects of physical
+                            exertion and meditation. The practice encourages the release of muscle tension, the slowing
+                            of breath, and the calming of the nervous system. Poses such as Savasana (Corpse Pose) and
+                            deep breathing exercises help induce a state of profound relaxation, reducing physical and
+                            mental stress. This state of relaxation not only feels restorative but also helps improve
+                            sleep quality and overall well-being.</p>
+                    </div>
+                    <div class="p-4">
+                        <h3>5. Reduces Anxiety</h3>
+                        <p class="pt-3">Yoga practices are effective in managing symptoms of anxiety disorders by
+                            fostering a sense of calm and stability. The mindful movement, breath control, and
+                            meditative focus in yoga help to reduce the physiological symptoms of anxiety, such as rapid
+                            heartbeat and shallow breathing. By creating a safe space to explore and release tension,
+                            yoga can help decrease anxiety levels, improve emotional regulation, and provide tools for
+                            coping with stress and anxiety in daily life.</p>
+                    </div>
+                    <div class="p-4">
+                        <h3>6. Enhances Self-Awareness</h3>
+                        <p class="pt-3">Mindfulness and meditation practices in yoga promote greater self-awareness and
+                            introspection. By paying attention to thoughts, emotions, and physical sensations without
+                            judgment, yoga practitioners develop a deeper understanding of themselves. This heightened
+                            self-awareness fosters personal growth, improves emotional intelligence, and enhances the
+                            ability to make conscious, healthy choices. It also helps in recognizing and breaking
+                            negative patterns of behavior.</p>
+                    </div>
+                    <div class="p-4">
+                        <h3>7. Improves Sleep</h3>
+                        <p class="pt-3">Yoga can significantly improve sleep quality and help with insomnia through its
+                            relaxing and stress-reducing effects. Practices such as gentle yoga sequences, restorative
+                            poses, and breathing exercises before bedtime can calm the mind and prepare the body for
+                            restful sleep. The reduction of stress and anxiety through regular yoga practice also
+                            contributes to better sleep patterns, allowing for deeper and more restorative rest</p>
+                    </div>
+                </div>
+
+                <div id="Social-Benefits" class="col-md-12">
+                    <h1 style="font-size:45px;" class="p-4"><b>Social Benefits</b></h1>
+                    <div class="p-4">
+                        <h3>1. Creates a Sense of Community</h3>
+                        <p class="pt-3">Joining yoga classes can foster a strong sense of community and belonging.
+                            Practicing yoga in a group setting provides an opportunity to connect with like-minded
+                            individuals who share a common interest in health and wellness. This communal experience can
+                            lead to the formation of supportive friendships and a sense of camaraderie. Whether
+                            participating in a local studio class, a community center program, or an online group
+                            session, the shared practice of yoga helps build a network of support and encouragement.
+                            This sense of community can enhance motivation, accountability, and enjoyment of the
+                            practice, making it a rewarding social experience.</p>
+                    </div>
+
+                    <div class="p-4">
+                        <h3>2. Improves Social Skills</h3>
+                        <p class="pt-3">Group yoga classes can significantly improve social interaction and
+                            communication skills. Engaging in a shared activity like yoga encourages individuals to
+                            interact, share experiences, and collaborate with others. This interaction helps to build
+                            confidence in social settings and fosters better communication skills. Yoga classes often
+                            include partner exercises, group discussions, and social activities, providing a structured
+                            yet relaxed environment for developing interpersonal skills. These improved social skills
+                            can extend beyond the yoga studio, enhancing personal and professional relationships and
+                            contributing to overall social well-being.</p>
+                    </div>
+                </div>
+
+                <div id="Other-Benefits" class="col-md-12">
+                    <h1 style="font-size:45px;" class="p-4"><b>Other Benefits</b></h1>
+                    <div class="p-4">
+                        <h3>1. Increases Energy Levels</h3>
+                        <p class="pt-3">Regular yoga practice can significantly boost energy levels and reduce feelings
+                            of fatigue. The combination of physical postures, breath control, and meditation enhances
+                            blood circulation, improves oxygen flow, and revitalizes the body. Specific poses, such as
+                            Sun Salutations and backbends, are particularly effective at energizing the body and mind.
+                            Additionally, yoga helps balance the body's energy systems, reducing the sluggishness that
+                            can come from stress and poor posture. By integrating yoga into your routine, you can
+                            experience sustained energy throughout the day and an overall sense of vitality.</p>
+                    </div>
+
+                    <div class="p-4">
+                        <h3>2. Promotes Mind-Body Connection</h3>
+                        <p class="pt-3">Yoga is renowned for enhancing the connection between the mind and body,
+                            promoting overall well-being. The practice encourages mindfulness, which involves being
+                            fully present and aware of the moment. This heightened state of awareness helps
+                            practitioners tune into their bodies, understand their physical sensations, and recognize
+                            their emotional states. The synchronization of breath with movement in yoga creates a
+                            harmonious relationship between the mind and body, leading to improved mental clarity,
+                            emotional stability, and physical health. This deepened mind-body connection fosters a
+                            greater sense of inner peace and balance.</p>
+                    </div>
+
+                    <div class="p-4">
+                        <h3>3. Encourages Healthy Lifestyle Choices</h3>
+                        <p class="pt-3">Practicing yoga often leads to healthier lifestyle choices in other areas of
+                            life, such as diet and self-care. The mindfulness cultivated through yoga practice can
+                            increase awareness of how different foods and habits affect the body and mind. This
+                            awareness often inspires individuals to make more nutritious dietary choices, prioritize
+                            adequate rest, and engage in other forms of self-care. Additionally, the discipline and
+                            routine established through regular yoga practice can spill over into other areas,
+                            encouraging a more holistic approach to health and well-being. This positive ripple effect
+                            supports long-term lifestyle changes that contribute to overall wellness.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="yogaposes">
+        <h1 style="font-size:65px;" class="text-center pt-4"><b>Yoga Poses</b></h1>
+        <div class="container">
+            
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                    <div id="carouselExampleIndicators" class="carousel slide p-5">
+                        <div class="carousel-indicators">
+                          <button style="color:black;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        </div>
+                        <div style="scale:0.9;" class="carousel-inner p-5 m-3 mx-auto">
+                          <div class="carousel-item active">
+                            <img src=" {% static "images/yoga-poses/yoga pose1.jpg" %} " class="d-block mx-auto" style="width: 500px; height: 350px;" alt="...">
+                            <h2 style="font-size:25px;" class="text-center p-4" >Tadasana (Mountain Pose)</h2>
+                            <div >
+                                <ol style="font-size:18px;" class="p-3 mx-auto col-7">
+                                    <li>Stand with Feet Together: Feet together, arms by your sides.</li>
+                                    <li>Raise Arms to Shoulder Height: Inhale, extend arms out to the sides.</li>
+                                    <li>Extend Arms Upwards: Continue inhaling, raise arms overhead, palms facing each other.</li>
+                                   
+                                </ol>
+                            </div>
+                            
+                          </div>
+                          <div class="carousel-item">
+                            <img style="width: 500px; height: 350px;" src="{% static "images/yoga-poses/yoga pose2.jpg" %} " class="d-block mx-auto" alt="...">
+                            <h2 style="font-size:25px;" class="text-center p-4" >Vrikshasana (Tree Pose)</h2>
+                            <div >
+                                <ol style="font-size:18px;" class="p-3 mx-auto col-7">
+                                    <li>Stand in Tadasana: Feet together, arms at sides</li>
+                                    <li>Shift Weight: To the left foot.</li>
+                                    <li>Place Right Foot: On inner left thigh or calf.</li>
+                                    <li>Palms Together: At chest in prayer position.</li>
+                                    <li>Raise Arms: Overhead, keeping them parallel.</li>
+                                    <li>Hold: For 5-10 breaths.</li>
+                                    <li>Release: Lower arms and foot, repeat on the other side.</li>
+                                </ol>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img style="width: 500px; height: 350px;" src="{% static "images/yoga-poses/yoga pose3.jpg" %} " class="d-block mx-auto" alt="...">
+                            <h2 style="font-size:25px;" class="text-center p-4" > Vajrasana (Thunderbolt Pose)</h2>
+                            <div >
+                                <ol style="font-size:18px;" class="p-3 mx-auto col-7">
+                                    <li>Kneel: Knees together, feet apart.</li>
+                                    <li>Sit Back: On your heels.</li>
+                                    <li>Hands on Thighs: Palms down</li>
+                                    <li>Straight Spine: Maintain upright posture.</li>
+                                    <li>Hold: For 5-10 minutes.</li>
+                                </ol>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img style="width: 500px; height: 350px;" src="{% static "images/yoga-poses/yoga pose 4.jpg" %} " class="d-block mx-auto" alt="...">
+                            <h2 style="font-size:25px;" class="text-center p-4" > Prasarita Padottanasana (Wide-Legged Forward Bend)</h2>
+                            <div >
+                                <ol style="font-size:18px;" class="p-3 mx-auto col-7">
+                                    <li>Stand in Tadasana: Step feet wide apart.</li>
+                                    <li>Hands on Hips: Inhale, lengthen spine.</li>
+                                    <li>Bend Forward: Exhale, hands to floor.</li>
+                                    <li>Lower Head: If possible, crown of head to floor.</li>
+                                    <li>Hold: Stay for 5-10 breaths.</li>
+                                    <li>Release: Hands to hips, inhale, rise up.</li>
+                                </ol>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img style="width: 500px; height: 350px;" src="{% static "images/yoga-poses/yoga pose 5.jpg" %} " class="d-block mx-auto" alt="...">
+                            <h2 style="font-size:25px;" class="text-center p-4" > Uttihita Trikonasana (Extended Triangle Pose)</h2>
+                            <div >
+                                <ol style="font-size:18px;" class="p-3 mx-auto col-7">
+                                    <li>Stand in Tadasana: Step feet 3-4 feet apart.</li>
+                                    <li>Turn Right Foot Out: Left foot slightly in.</li>
+                                    <li>Extend Arms: Parallel to the floor, palms down.</li>
+                                    <li>Reach Right Hand Forward: Hinge at hips, touch the floor or shin.</li>
+                                    <li>Left Arm Up: Extend towards the ceiling, gaze at the left hand.</li>
+                                    <li>Hold: Stay for 5-10 breaths.</li>
+                                    <li>Release: Inhale, come up, repeat on the other side.</li>
+                                </ol>
+                            </div>
+                          </div>
+                        </div>
+                        <button  class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          
+                          <span style="font-size:25px;" class="text-dark"> Previous </span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span style="font-size:25px;" class="text-dark ">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="yogaresources" class="pb-4">
+        <div class="container">
+            <div class="row align-items-center">
+            <h1 style="font-size:65px;" class="text-center p-4"><b>Yoga Resources for Beginners</b></h1>
+            <div class="row">
+                <div class="col-md-12 p-3">
+                    <h2 class="pt-3">Online Classes</h2>
+                    <div class="p-2 embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=MLa6JSp5ZYvlmLHf&amp;list=PLui6Eyny-UzzWwB4h9y7jAzLbeuCUczAl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                      </div>
+                    <p class="p-2"><b>Websites</b> : <a style=" text-decoration:underline; color:black; " href="https://www.sukhayoga.ca/">Sukha Yoga</a> ,  <a  style=" text-decoration:underline; color:black; " href="https://www.glo.com/">Glo</a></p>
+                </div> 
+
+                <div class="col-md-12 p-3">
+                    <h2 >Mobile Apps</h2>
+                    
+                    <p class="pt-3">Apps such as <a style=" text-decoration:underline; color:black; " href="https://play.google.com/store/apps/details?id=com.dailyyoga.inc&hl=en_IN&pli=1">Daily Yoga</a>, <a style=" text-decoration:underline; color:black; " href="https://yogastudioapp.com/">Yoga Studio</a>, and <a style=" text-decoration:underline; color:black; " href="https://www.downdogapp.com/">Down Dog</a> provide guided sessions and customizable routines</p>
+                </div>
+
+                <div class="col-md-12 p-3">
+                    <h2 >Books and Guides</h2>
+                    
+                    <p class="pt-3">Explore beginner-friendly books like <a style=" text-decoration:underline; color:black; " href="https://www.amazon.in/Yoga-Bible-Definitive-Guide-Postures/dp/1582972427">"The Yoga Bible"</a> by Christina Brown or <a style=" text-decoration:underline; color:black; " href="https://www.amazon.in/LIGHT-YOGA-B-K-S-Iyengar/dp/8172235011">"Light on Yoga"</a> by B.K.S. Iyengar for detailed instructions and insights.</p>
+                </div>
+
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background-color:#bfb7e7;" class="py-3 my-10 ">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link px-2 text-muted">About Us</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link px-2 text-muted">Contact Us</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+          <li class="nav-item"><a href=" {% url "blog_display" %} " class="nav-link px-2 text-muted">Blogs</a></li>
+        </ul>
+        <p class="text-center text-muted">&copy; 2022 Company, Inc</p>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
