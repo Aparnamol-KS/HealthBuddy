@@ -3,6 +3,7 @@
 {
     "version": 2,
     "builds": [
+<<<<<<< HEAD
       {
         "src": "chatbot/wsgi.py",
         "use": "@vercel/python",
@@ -12,6 +13,16 @@
         "src": "build_files.sh",
         "use": "@vercel/static"
       }
+=======
+        {
+            "src": "chatbot/wsgi.py",
+            "use": "@vercel/python",
+            "config": {
+                "maxLambdaSize": "15mb",
+                "runtime": "python3.9"
+            }
+        }
+>>>>>>> b6be1186f9724f901a0305868b1879145bb9c006
     ],
     "routes": [
       {
